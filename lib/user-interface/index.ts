@@ -457,7 +457,7 @@ export class UserInterface extends Construct {
     const asset = s3deploy.Source.asset(appPath, {
       bundling: {
         image: cdk.DockerImage.fromRegistry(
-          "public.ecr.aws/sam/build-nodejs18.x:latest"
+          "public.ecr.aws/sam/build-nodejs18.x:latest" // TODO: replace with a private ECR repo/image 
         ),
         command: [
           "sh",

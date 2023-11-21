@@ -26,7 +26,7 @@ export class Layer extends Construct {
     const layerAsset = new s3assets.Asset(this, "LayerAsset", {
       path,
       bundling: {
-        image: runtime.bundlingImage,
+        image: runtime.bundlingImage, // TODO: replace with a private ECR repo/image 
         platform: architecture.dockerPlatform,
         command: [
           "bash",

@@ -1,4 +1,7 @@
 // https://github.com/aws/deep-learning-containers/blob/master/available_images.md
+
+// TODO: replace with a private ECR repo/images? 
+
 export class ContainerImages {
   /*
   HF_PYTORCH_INFERENCE
